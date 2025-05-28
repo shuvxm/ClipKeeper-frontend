@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 // Use VITE environment variable or default to localhost for dev
-const BACKEND_BASE_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8080'
+// const BACKEND_BASE_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8080' || 'https://clipkeeper.onrender.com/';
+const BACKEND_BASE_URL = import.meta.env.VITE_BACKEND_URL ?? 'https://clipkeeper.onrender.com';
 
 export const downloadReel = async (url) => {
   try {
