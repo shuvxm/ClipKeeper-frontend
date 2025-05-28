@@ -1,0 +1,67 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Global Utility Classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Reset index.css dark mode for our design */
+:root {
+  color: #333;
+  background-color: #fff;
+}
+
+body {
+  margin: 0;
+  display: block;
+  place-items: normal;
+  min-width: auto;
+  min-height: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #333;
+    background-color: #fff;
+  }
+  a:hover {
+    color: #6366f1;
+  }
+  button {
+    background-color: #6366f1;
+  }
+}
